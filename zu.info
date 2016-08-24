@@ -9,15 +9,15 @@ base theme = bootstrap
 ;;;;;;;;;;;;;;;;;;;;;
 
 regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
+regions[header]         = 'Header'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
+regions[sidebar_first]  = 'Left'
+regions[sidebar_second] = 'Right'
 regions[footer]         = 'Footer'
-regions[page_top]       = 'Page top'
-regions[page_bottom]    = 'Page bottom'
+regions[page_top]       = 'Top'
+regions[page_bottom]    = 'Bottom'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -25,7 +25,6 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 
-stylesheets[all][] = css/style.css
 stylesheets[all][] = less/style.less
 
 
