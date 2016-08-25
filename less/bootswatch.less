@@ -13,7 +13,7 @@
    font-style: normal;
 }
 
-@web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&subset=cyrillic";
+@web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&subset=cyrillic";
 
 .web-font(@path) {
   @import url("@{path}");
@@ -44,6 +44,13 @@
   &-brand {
     line-height: 1;
   }
+}
+
+.header-navbar {
+	li a {
+		font-family: 'AppleBerry', sans-serif;
+		font-size: 1.4em;
+	}
 }
 
 // Buttons ====================================================================

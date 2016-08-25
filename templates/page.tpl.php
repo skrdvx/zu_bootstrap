@@ -76,15 +76,21 @@
 <header role="banner">
   <div class="header-info">
 		<div class="<?php print $container_class; ?>">
-			<a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-				<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?> <?php print $site_name; ?>" />
-			</a>
-			<?php if (!empty($page['header'])): ?>
-				<?php print render($page['header']); ?>
-			<?php endif; ?>
-			<?php if (!empty($secondary_nav)): ?>
-				<?php print render($secondary_nav); ?>
-			<?php endif; ?>
+			<div class="row">
+				<div class="col-md-3">
+					<a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+						<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?> <?php print $site_name; ?>" />
+					</a>
+				</div>
+				<div class="col-md-6">
+					<?php if (!empty($page['header'])): ?>
+						<?php print render($page['header']); ?>
+					<?php endif; ?>
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+			</div>
 		</div>	
   </div>
 	<nav class="header-navbar <?php print $navbar_classes; ?>" role="navigation">
@@ -100,6 +106,9 @@
 			<div class="navbar-collapse collapse">
 				<?php if (!empty($page['navigation'])): ?>
 					<?php print render($page['navigation']); ?>
+				<?php endif; ?>
+				<?php if (!empty($secondary_nav)): ?>
+					<?php print render($secondary_nav); ?>
 				<?php endif; ?>
 			</div>
 		</div>
