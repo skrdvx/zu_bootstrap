@@ -73,25 +73,30 @@
  * @ingroup templates
  */
 ?>
-<header role="banner">
+<header id="header" role="banner">
+
   <div class="header-info">
 		<div class="<?php print $container_class; ?>">
 			<div class="row">
-				<div class="col-md-3">
-					<a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-						<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?> <?php print $site_name; ?>" />
+				<div class="col-md-2">
+					<a class="logo zu pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+						<img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?> <?php print $site_name; ?>" />
 					</a>
 				</div>
-				<div class="col-md-6">
-					<?php if (!empty($page['header'])): ?>
-						<?php print render($page['header']); ?>
-					<?php endif; ?>
+				<div class="col-md-8">
+          <div class="row">
+            <?php if (!empty($page['header'])): ?>
+  						<?php print render($page['header']); ?>
+  					<?php endif; ?>
+          </div>
 				</div>
-				<div class="col-md-3">
-					
+				<div class="col-md-2">
+          <a class="logo cds pull-right" href="http://www.cds.spb.ru/" target="_blank" >
+            <img class="img-responsive" src="/sites/all/themes/zu/images/logo_cds.png">
+          </a>
 				</div>
 			</div>
-		</div>	
+		</div>
   </div>
 	<nav class="header-navbar <?php print $navbar_classes; ?>" role="navigation">
 		<div class="<?php print $container_class; ?>">
@@ -115,7 +120,7 @@
 	</nav>
 </header>
 
-<main class="main-container <?php print $container_class; ?>">
+<main id="main" class="main-container <?php print $container_class; ?>">
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>

@@ -1,0 +1,63 @@
+// ZU 12 Design
+
+@font-face {
+   font-family: 'AppleBerry';
+   src: url('../fonts/appleberry_with_cyrillic-webfont.eot');
+   src: url('../fonts/appleberry_with_cyrillic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/appleberry_with_cyrillic-webfont.woff2') format('woff2'),
+        url('../fonts/appleberry_with_cyrillic-webfont.woff') format('woff'),
+        url('../fonts/appleberry_with_cyrillic-webfont.svg#appleberryregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+// Header
+// --------------------------------------------------
+#header {
+
+  .header-info {
+    height: 100px;
+    .logo {
+      display: block;
+      height: 80px;
+      padding: 10px 0;
+      &.zu img {
+        height: 80px;
+      }
+      &.cds img {
+        height: 50px;
+        margin: 15px 0;
+      }
+    }
+    .link {
+      display: block;
+      margin-top: 20px;
+      font-size: 1.4em;
+      line-height: 1;
+      text-align: center;
+      color: @gray-base;
+      &:hover {
+        text-decoration: none;
+      }
+      .icon {
+        font-size: 2em;
+        padding-bottom: 5px;
+      }
+      span {
+        display: block;
+        width: 100%;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+// Page header.
+.page-header {
+	// font-family: 'AppleBerry', sans-serif;
+	text-align: center;
+}
